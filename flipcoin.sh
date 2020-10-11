@@ -10,7 +10,8 @@ then
   ((tails++))
 else
    ((heads++))
-fi
+fi 
+
 done
 echo "Tails was tossed $tails times"
 echo "Heads was tossed $heads times"
