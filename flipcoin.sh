@@ -21,6 +21,17 @@ done
          echo "tails win by $diff "
       else
          echo "it is a tie "
+         while [ $diff -le 2 ] && [ $diff -le 2 ]
+         do
+            temp=$((RANDOM%2))
+            if [ $temp -eq 1 ]
+            then 
+               ((head++))
+             else
+              ((tail++))
+              fi
+               diff=$(($head-$tail))
+          done
       fi
 echo "number of time head wins $head"
 echo "number of times tail wins $tail"
